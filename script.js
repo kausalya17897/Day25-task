@@ -12,7 +12,7 @@ async function getPopularAnime(){
     var data=await fetch(`https://animechan.vercel.app/api/quotes/anime?title=naruto&page=2`,{method:"GET"});
     const users=await data.json();
     const userContainer=document.querySelector(".user-list");
-    const imagecontain=document.querySelector(".user-piclist")
+   
     userContainer.innerHTML="";
     var pic=document.createElement('img');
     userContainer.append(pic);
